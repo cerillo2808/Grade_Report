@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
 TEST(Prueba, devolverTrue) {
-    bool verdadero = true;
+  bool verdadero = true;
 
-    EXPECT_TRUE(verdadero);
+  EXPECT_TRUE(verdadero);
 }
