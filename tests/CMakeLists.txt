@@ -9,7 +9,8 @@ set(TESTFILES
 # El nombre de la variable empieza con el nombre del target en src/CMakeLists.txt
 # seguido de _SOURCE_FILES
 # TODO: Si cambian el nombre del target en src/CMakeLists.txt, deben cambiarlo acá también.
-    ${cpp_template_SOURCE_DIR}/src/main.cpp
+    ${cpp_template_SOURCE_DIR}/src/Main.cpp
+    ${cpp_template_SOURCE_DIR}/src/Interaction.cpp
 )
 
 # Usualmente NO DEBEN MODIFICAR NADA DE AQUÍ EN ADELANTE.

@@ -10,7 +10,8 @@ set(INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
 
 set(SOURCES
 # TODO: Agreguen acá los archivos fuente que van a compilar.
-    main.cpp
+    Main.cpp
+    Interaction.cpp
 )
 
 add_executable(${TARGET_NAME} ${SOURCES})
