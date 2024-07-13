@@ -18,7 +18,7 @@ int Subject ::amountType(Type type) {
   int quantity;
 
   if (!evaluations.empty()) {
-    for (int i = 0; i < evaluations.size(); i++) {
+    for (size_t i = 0; i < evaluations.size(); i++) {
       if (evaluations[i].getType() == type) {
         quantity++;
       }
