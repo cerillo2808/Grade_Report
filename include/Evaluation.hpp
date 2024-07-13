@@ -1,17 +1,16 @@
 #ifndef EVALUATION
 #define EVALUATION
 #include <Type.hpp>
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 class Evaluation {
-  public:
+ public:
   Evaluation(Type evaluation, double percentage);
 
-
-  private:
+ private:
   Type evaluation;
   int order;
   double percentage;

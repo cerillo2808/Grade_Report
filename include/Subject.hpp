@@ -15,7 +15,7 @@ class Subject {
  private:
   string name;
   string teacher;
-  vector <Evaluation> evaluations;
+  vector<Evaluation> evaluations;
 };
 
 #endif
