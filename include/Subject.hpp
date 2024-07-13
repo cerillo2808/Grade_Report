@@ -11,6 +11,7 @@ class Subject {
  public:
   Subject(string name);
   void addEvaluation(Type type, double percentage);
+  int amountType(Type type);
 
  private:
   string name;
