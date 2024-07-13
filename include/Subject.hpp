@@ -1,6 +1,7 @@
-#ifndef EVALUATION
-#define EVALUATION
+#ifndef SUBJECT
+#define SUBJECT
 #include <Evaluation.hpp>
+#include <Type.hpp>
 #include <string>
 #include <vector>
 
@@ -8,13 +9,13 @@ using namespace std;
 
 class Subject {
  public:
-  void addEvaluation(int type);
+  Subject(string name);
+  void addEvaluation(Type type, double percentage);
 
  private:
   string name;
   string teacher;
-
-  vector<Evaluation> evaluations;
+  vector <Evaluation> evaluations;
 };
 
 #endif

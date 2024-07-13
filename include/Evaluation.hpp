@@ -1,14 +1,22 @@
 #ifndef EVALUATION
 #define EVALUATION
+#include <Type.hpp>
+#include <string>
+#include <iostream>
 
-enum Evaluation {
+using namespace std;
 
-  other = 0,
-  exam = 1,
-  project = 2,
-  homework = 3,
-  quiz = 4,
+class Evaluation {
+  public:
+  Evaluation(Type evaluation, double percentage);
 
+
+  private:
+  Type evaluation;
+  int order;
+  double percentage;
+  bool team;
+  string info;
 };
 
 #endif
