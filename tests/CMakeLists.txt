@@ -1,7 +1,8 @@
 # Agreguen acá todos los archivos que necesiten para compilar su tarea.
 set(TESTFILES
 # Si agregan más archivos de pruebas en test/ entonces deben agregarlos acá
-    test_prueba.cpp
+    ut_evaluation.cpp
+    ut_subject.cpp
 # Pruebas de ejemplo (también en test/):
 
 # Si agregan más archivos .cc en src/ entonces deben agregarlos acá. De lo contrario,
