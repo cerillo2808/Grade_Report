@@ -27,3 +27,7 @@ int Subject ::amountType(Type type) {
 
   return quantity;
 }
+
+// TO-DO: adder de los atributos. (profesor, name)
+// TO-DO: getter del vector de evaluaciones.
+// TO-DO: print vector de evaluaciones.
