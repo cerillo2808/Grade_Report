@@ -1,6 +1,4 @@
 #include <gtest/gtest.h>
-#include <Evaluation.hpp>
-#include <Type.hpp>
 
 #include <Evaluation.hpp>
 #include <Type.hpp>
@@ -40,7 +38,7 @@ TEST(Evaluation, getTypeQuiz) {
   EXPECT_EQ(type, quiz);
 }
 
-TEST(Evaluation, falso){
-    bool falso = false;
-    EXPECT_TRUE(falso);
+TEST(Evaluation, falso) {
+  bool falso = false;
+  EXPECT_TRUE(falso);
 }
