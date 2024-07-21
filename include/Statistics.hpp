@@ -8,7 +8,6 @@ using namespace std;
 
 class Statistics {
  public:
-  
 };
 
 #endif
