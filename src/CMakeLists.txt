@@ -12,6 +12,9 @@ set(SOURCES
 # TODO: Agreguen acá los archivos fuente que van a compilar.
     Main.cpp
     Interaction.cpp
+    Statistics.cpp
+    Subject.cpp
+    Evaluation.cpp
 )
 
 add_executable(${TARGET_NAME} ${SOURCES})

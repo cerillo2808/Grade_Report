@@ -9,6 +9,8 @@ using namespace std;
 class Evaluation {
  public:
   Evaluation(Type evaluation, double percentage);
+  void setOrder(int order);
+  Type getType();
 
  private:
   Type evaluation;
