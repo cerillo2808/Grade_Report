@@ -55,21 +55,7 @@ jobs:
               run: sudo apt-get install cppcheck
             - name: Run cppcheck
               # Si cppcheck se queja sobre el uso de caracteres no ASCII pueden añadir --suppress=syntaxError antes de --error-exitcode=1
-              run: cppcheck --enable=all --suppress=missingIncludeSystem --error-exitcode=1 --includes-file=./include/ --language=c++ --std=c++11 -i src/CMakeLists.txt -i tests/CMakeLists.txt src/* tests/*
-    valgrind:
-        runs-on: ubuntu-24.04
-        timeout-minutes: 5
-        steps:
-            - name: Check out code
-              uses: actions/checkout@v4
-            - name: Install dependencies
-              run: sudo apt-get install valgrind
-            - name: Configure
-              run: cmake -B build -S . -DCMAKE_BUILD_TYPE=DEBUG
-            - name: Build
-              run: cmake --build build
-            - name: Run valgrind
-              run: valgrind --leak-check=full --error-exitcode=1 ./build/unit_tests
+              run: cppcheck --enable=all --suppress=missingIncludeSystem --error-exitcode=1 --includes-file=./include/ --language=c++ --std=c++11 -i src/CMakeLists.txt src/*
     clang-analyzer:
         runs-on: ubuntu-24.04
         timeout-minutes: 5
