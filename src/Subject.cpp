@@ -15,7 +15,7 @@ void Subject ::addEvaluation(Type type, double percentage) {
 }
 
 int Subject ::amountType(Type type) {
-  int quantity;
+  int quantity = 0;
 
   if (!evaluations.empty()) {
     for (size_t i = 0; i < evaluations.size(); i++) {
