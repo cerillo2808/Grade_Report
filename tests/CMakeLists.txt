@@ -12,6 +12,7 @@ set(TESTFILES
 # TODO: Si cambian el nombre del target en src/CMakeLists.txt, deben cambiarlo acá también.
     ${cpp_template_SOURCE_DIR}/src/Main.cpp
     ${cpp_template_SOURCE_DIR}/src/Interaction.cpp
+    ${cpp_template_SOURCE_DIR}/src/Statistics.cpp
     ${cpp_template_SOURCE_DIR}/src/Subject.cpp
     ${cpp_template_SOURCE_DIR}/src/Evaluation.cpp
 )
