@@ -70,50 +70,6 @@ jobs:
               run: cmake --build build
             - name: Run valgrind
               run: valgrind --leak-check=full --error-exitcode=1 ./build/unit_tests
-    code-coverage-xml:
-        runs-on: ubuntu-24.04
-        steps:
-            - name: Check out code
-              uses: actions/checkout@v4
-            - name: Install dependencies
-              run: sudo apt-get install gcovr
-            - name: Configure
-              run: cmake -B build -S . -DCMAKE_BUILD_TYPE=DEBUG -DCOVERAGE=ON
-            - name: Build
-              run: cmake --build build
-            - name: Test
-              run: |
-                cd build
-                make
-                make coverage_xml
-    code-coverage-html:
-        runs-on: ubuntu-24.04
-        timeout-minutes: 5
-        steps:
-            - name: Check out code
-              uses: actions/checkout@v4
-            - name: Install dependencies
-              run: sudo apt-get install gcovr
-            - name: Configure
-              run: cmake -B build -S . -DCMAKE_BUILD_TYPE=DEBUG -DCOVERAGE=ON
-            - name: Build
-              run: cmake --build build
-            - name: Test
-              run: |
-                cd build
-                make
-                make coverage_html
-    upload-coverage:
-        runs-on: ubuntu-24.04
-        timeout-minutes: 5
-        if: success() || failure()
-        needs: [code-coverage-xml, code-coverage-html]
-        steps:
-            - name: Upload coverage
-              uses: actions/upload-artifact@v4
-              with:
-                name: coverage
-                path: build/coverage_html
     clang-analyzer:
         runs-on: ubuntu-24.04
         timeout-minutes: 5
