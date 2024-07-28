@@ -10,6 +10,12 @@ class Evaluation {
  public:
   Evaluation(Type evaluation, double percentage);
   void setOrder(int order);
+  void setGrade(double grade);
+  void setTeam();
+  int getOrder();
+  double getPercentage();
+  bool isTeam();
+  void getInfo();
   Type getType();
 
  private:
@@ -18,6 +24,7 @@ class Evaluation {
   double percentage;
   bool team;
   string info;
+  double grade;
 };
 
 #endif
